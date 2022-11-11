@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>🍂 Mad Libs 🪵</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="intro" class="center">
+        <h1>Fall Mad Libs</h1>
+        <h2>🍂 Fun Facts About Fall 🪵</h2>
+        <p>
+          <strong>Mad Libs</strong> are stories with words removed and replaced
+          by blank spaces. Fill in the blanks for a fun falll story! Make sure
+          to think outside the box. The wackier, the better!
+        </p>
+      </header>
+      <main>
+        <form
+          id="madlibs-form"
+          name="madlibs-form"
+          onsubmit="submitMadLibs(event)"
+        >
+          <section id="madlibs-inputs">
+            <div class="input-group">
+              <label for="noun_1">✏️ noun</label>
+              <input type="text" id="noun_1" name="noun_1" required />
+            </div>
+            <div class="input-group">
+              <label for="number">🔢 number</label>
+              <input type="text" id="number" name="number" required />
+            </div>
+            <div class="input-group">
+              <label for="month_1">📅 month</label>
+              <input type="text" id="month_1" name="month_1" required />
+            </div>
+            <div class="input-group">
+              <label for="month_2">📅 month</label>
+              <input type="text" id="month_2" name="month_2" required />
+            </div>
+            <div class="input-group">
+              <label for="noun_2">✏️ noun</label>
+              <input type="text" id="noun_2" name="noun_2" required />
+            </div>
+            <div class="input-group">
+              <label for="adjective">🦄 adjective</label>
+              <input type="text" id="adjective" name="adjective" required />
+            </div>
+            <div class="input-group">
+              <label for="noun_3">✏️ noun</label>
+              <input type="text" id="noun_3" name="noun_3" required />
+            </div>
+            <div class="input-group">
+              <label for="plural_noun_1">✏️ plural noun</label>
+              <input
+                type="text"
+                id="plural_noun_1"
+                name="plural_noun_1"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="plural_noun_2">✏️ plural noun</label>
+              <input
+                type="text"
+                id="plural_noun_2"
+                name="plural_noun_2"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="verb_ed">🏃 verb-ed</label>
+              <input type="text" id="verb_ed" name="verb_ed" required />
+            </div>
+            <div class="input-group">
+              <label for="plural_noun_3">✏️ plural noun</label>
+              <input
+                type="text"
+                id="plural_noun_3"
+                name="plural_noun_3"
+                required
+              />
+            </div>
+          </section>
+          <section id="madlibs-submit">
+            <button type="submit">Generate</button>
+          </section>
+        </form>
+        <section id="completed-story" class="hide"></section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
